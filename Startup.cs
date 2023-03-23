@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -7,6 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
 using MyTodoApp.Data;
 using Microsoft.Extensions.Configuration;
@@ -56,6 +58,14 @@ namespace MyTodoApp
 
             app.UseRouting();
 
+            var supporteCultures = new[] { new CultureInfo("pt-BR") };
+            app.UseRequestLocalization(new RequestLocalizationOptions
+            {
+                DefaultRequestCulture = new RequestCulture("pt-BR", "pt-BR"),
+                SupportedCultures = supporteCultures,
+                SupportedUICultures = supporteCultures
+            });
+            
             app.UseAuthentication();
             app.UseAuthorization();
 
