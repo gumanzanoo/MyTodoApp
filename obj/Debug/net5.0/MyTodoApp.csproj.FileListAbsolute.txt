@@ -149,6 +149,11 @@ C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Todo\Create.cshtml.g.cs
+C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Todo\Delete.cshtml.g.cs
+C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Todo\Details.cshtml.g.cs
+C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Todo\Edit.cshtml.g.cs
+C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Todo\Index.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\MyTodoApp.RazorTargetAssemblyInfo.cache
