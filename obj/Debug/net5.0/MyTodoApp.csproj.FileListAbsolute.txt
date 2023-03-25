@@ -143,8 +143,6 @@ C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\MyTodoApp.TagHelpers.input.cache
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\MyTodoApp.TagHelpers.output.cache
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\MyTodoApp.RazorCoreGenerate.cache
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
-C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\DOTNETC#\MyTodoApp\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
