@@ -50,7 +50,6 @@ namespace MyTodoApp
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
@@ -58,22 +57,33 @@ namespace MyTodoApp
 
             app.UseRouting();
 
-            var supporteCultures = new[] { new CultureInfo("pt-BR") };
+            var supportedCultures = new[] { new CultureInfo("pt-BR") };
             app.UseRequestLocalization(new RequestLocalizationOptions
             {
                 DefaultRequestCulture = new RequestCulture("pt-BR", "pt-BR"),
-                SupportedCultures = supporteCultures,
-                SupportedUICultures = supporteCultures
+                SupportedCultures = supportedCultures,
+                SupportedUICultures = supportedCultures
             });
-            
+
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.Use(async (context, next) =>
+            {
+                if (!context.User.Identity.IsAuthenticated && !context.Request.Path.StartsWithSegments("/Identity"))
+                {
+                    context.Response.Redirect("/Identity/Account/Login");
+                    return;
+                }
+
+                await next();
+            });
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Todo}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
             });
         }
